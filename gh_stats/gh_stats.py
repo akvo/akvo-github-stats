@@ -128,14 +128,14 @@ class Issues():
         file_name = "{}.csv".format(self.repo[:-1])
         if not os.path.exists('csv'):
             os.makedirs('csv')
-        with open("csv/{}".format(file_name), 'wb') as f:
+        with open("csv/{}".format(file_name), 'w') as f:
             f.write(self.data.csv)
 
     def save_raw_json(self):
         file_name = "{}.json".format(self.repo[:-1])
         if not os.path.exists('json'):
             os.makedirs('json')
-        with open("json/{}".format(file_name), 'wb') as f:
+        with open("json/{}".format(file_name), 'w') as f:
             f.write(json.dumps(self.da_hub.issues))
 
 
