@@ -1,6 +1,6 @@
 # Akvo GitHub stats
 
-Fetches isseus data of select Akvo repositories from the github api. Currently fetches from the following repos:
+Fetches issues data of select Akvo repositories from the github api. Currently fetches from the following repos:
 
 * https://github.com/akvo/akvo-dash/
 * https://github.com/akvo/akvo-flow/
