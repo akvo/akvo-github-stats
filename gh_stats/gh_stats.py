@@ -28,6 +28,7 @@ WEB_REPO = "akvo-web/"
 
 ISSUE_STATE = "all"
 ENDPOINT = "issues"
+PAGESIZE = 100
 
 json_field = namedtuple("json_field", "title path")
 
@@ -62,8 +63,9 @@ class GitHubAPI():
             self.repo,
             self.endpoint,
             "?",
-            self.query({"page": page_no})
+            self.query({"page": page_no, "per_page": 100})
         ])
+        print(url)
         if self.user:
             return requests.get(url, auth=(self.user, self.token))
         else:
