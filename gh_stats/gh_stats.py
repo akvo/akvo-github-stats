@@ -138,7 +138,8 @@ class Issues():
 
 
 def run():
-    for repo in [RSR_REPO, FLOW_REPO]:#, WEB_REPO, FLOW_MOBILE_REPO, RSR_UP_REPO, SITES_REPO, PROVISION_REPO]:
+    for repo in [RSR_REPO, FLOW_REPO, WEB_REPO, FLOW_MOBILE_REPO, RSR_UP_REPO, SITES_REPO,
+                 PROVISION_REPO]:
         if DEBUG:
             print("Getting issues from {}".format(repo[:-1]))
         issues = Issues(repo)
