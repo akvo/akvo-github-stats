@@ -11,13 +11,13 @@ Fetches issues data of select Akvo repositories from the github api. Currently f
 * https://github.com/akvo/akvo-sites/
 * https://github.com/akvo/akvo-web/
 
-The data is converted to CVS files and stored in the csv directory using the repo name as file name. The raw json is also saved, in the json dir.
+The data is converted to CSV files and stored in the **csv** directory using the repo name as file name. The raw json is also saved, in the **json** dir.
 
 ### Setup and usage
 
 Clone the repository: ```git clone git@github.com:akvo/akvo-github-stats.git```
 
-Cd into the script dierctory: ```cd akvo-github-stats/gh_stats```
+Cd into the script directory: ```cd akvo-github-stats/gh_stats```
 
 Run the script: ```python gh_stats.py```
 
